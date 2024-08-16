@@ -35,14 +35,26 @@
       background-position: center;
 }
 
+/* The glitch effect only activates on hover */
+.glitch-img:hover::before{
+    opacity: 1;
+    animation: glitch-effect 3s infinite linear alternate-reverse;
+}
+
+
+.glitch-img:hover::after {
+    opacity: 1;
+    animation: glitch-effect 2s infinite linear alternate-reverse;
+}
+
 .glitch-img::before{
     left: -6px;
-      animation: glitch-effect 2s infinite linear alternate-reverse;
+      /* animation: glitch-effect 2s infinite linear alternate-reverse; */
       background-image: url(../images/glitch-img-red.png);
 }
 
 .glitch-img::after{
     left: 6px;
-    animation: glitch-effect 3s infinite linear alternate-reverse;
+    /* animation: glitch-effect 3s infinite linear alternate-reverse; */
     background-image: url(../images/glitch-img-blue.png);
 }
