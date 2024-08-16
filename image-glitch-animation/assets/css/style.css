@@ -1,0 +1,48 @@
+:root{
+    --steps: 17;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.glitch-img {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/glitch-img-og.png);
+}
+
+.glitch-img::before,
+.glitch-img::after{
+    content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 400px;
+      height: 300px;
+      clip: rect(0, 0, 0, 0);
+      overflow: hidden;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+}
+
+.glitch-img::before{
+    left: -6px;
+      animation: glitch-effect 2s infinite linear alternate-reverse;
+      background-image: url(../images/glitch-img-red.png);
+}
+
+.glitch-img::after{
+    left: 6px;
+    animation: glitch-effect 3s infinite linear alternate-reverse;
+    background-image: url(../images/glitch-img-blue.png);
+}
