@@ -4,15 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animations Stock</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 5rem;
+        }
+        ol{
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        ol li{
+            margin: 1rem;
+        }
+        ol li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.5rem;
+        }
+        ol li a:hover {
+            text-decoration: none;
+            color: white;
+            background-color: #333;
+            font-size: 1.5rem;
+            padding: 0.5rem;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Animations Stock</h1>
-    <h3>View some animations I have made using CSS</h3>
+    <div class="container">
+        <h1>Animations Stock</h1>
+    <h3>View some small web animations I have made</h3>
     <ol>
         <li><a href="sticky-position-scroll/index.html">Sticky Position Scroll Animation</a></li>
         <li><a href="3d-rotation-css/index.html">3d Rotation CSS</a></li>
         <li><a href="horizontal-scroll-parallax/index.html">Horizonatal Scroll Parallax</a></li>
         <li><a href="image-glitch-animation/index.html">CSS Image Glitch</a></li>
     </ol>
+    </div>
 </body>
 </html>
