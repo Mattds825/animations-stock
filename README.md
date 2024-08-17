@@ -18,3 +18,9 @@ This is a big collection of web animations I have been working on
 - Following this tutorial from [Roden](https://dev.to/kerthin/how-to-create-pure-css-glitch-animation-for-images-and-svg-ojl)
 - Used CSS instead of SCSS
 - Added javascript to add some randomization
+
+
+## Drag and Drop
+Used Css/Html and Js to create simple drag and drog sticky note. that you can specific colors of and move around the window.
+
+- followed this [tutorial](https://www.youtube.com/watch?v=eLSs9h7cZy0&t=60s)
