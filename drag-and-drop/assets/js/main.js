@@ -1,4 +1,4 @@
-let color = document.querySelector("#colorInput");
+let selectedColor = document.querySelector("#colorInput");
 // let createBtn = document.querySelector("#createBtn");
 let createBtn = document.getElementById("createBtn");
 let list = document.querySelector("#list");
@@ -18,5 +18,12 @@ createBtn.onclick = () => {
       <span class="close">x</span>
       <textarea placeholder="Write Content ..." rows="10" cols="30"></textarea>
       `;
+      newNote.style.borderColor = selectedColor.value;
     list.appendChild(newNote);
 };
+
+document.addEventListener("click", (e) => {
+    if(e.target.classList.contains("close")) {
+           e.target.parentElement.remove();
+    }
+});
