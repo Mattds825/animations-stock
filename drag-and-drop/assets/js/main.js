@@ -1,6 +1,5 @@
 let selectedColor = document.querySelector("#colorInput");
-// let createBtn = document.querySelector("#createBtn");
-let createBtn = document.getElementById("createBtn");
+let createBtn = document.querySelector("#createBtn");
 let list = document.querySelector("#list");
 
 createBtn.onclick = () => {
