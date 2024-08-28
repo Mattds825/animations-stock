@@ -24,3 +24,9 @@ This is a big collection of web animations I have been working on
 Used Css/Html and Js to create simple drag and drog sticky note. that you can specific colors of and move around the window.
 
 - followed this [tutorial](https://www.youtube.com/watch?v=eLSs9h7cZy0&t=60s)
+
+## Text Shadow and Move
+
+Use event listeners to offest text shadow based on mouse position 
+
+- from 30 days of javascript day 16
